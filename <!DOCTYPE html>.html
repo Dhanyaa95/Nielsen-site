@@ -93,12 +93,31 @@
 </div>
     </div>
   </section>
-
+  
   <!-- FOOTER -->
   <footer>
     <div class="container">
       <p>&copy; 2025 The Nielsen Company (US), LLC. All Rights Reserved.</p>
     </div>
   </footer>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+ 
+			embeddedservice_bootstrap.init(
+				'00DKc00000C8A8l',
+				'Agent_Web_Deployment',
+				'https://im1744794698103.my.site.com/ESWAgentWebDeployment1745303022254',
+				{
+					scrt2URL: 'https://im1744794698103.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://im1744794698103.my.site.com/ESWAgentWebDeployment1745303022254/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
